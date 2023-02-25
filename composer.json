@@ -1,0 +1,12 @@
+{
+    "name" : "robot/fight",
+    "description" : "Robot fight",
+    "autoload" : {
+        "psr-4" : {
+            "App\\" : "./"
+        }
+    },
+    "require": {
+        "symfony/var-dumper": "^6.0"
+    }
+}

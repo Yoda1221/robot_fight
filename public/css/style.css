@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#darkBlob {
+    right: 0;
+    top: -150px;
+    z-index: -3;
+    position: absolute;
+    overflow: hidden;
+    transform: rotate(360deg);
+    animation: rotation 800s linear reverse infinite;
+    overflow: hidden;
+    transform: rotate(360deg);
+    animation: rotation 800s linear reverse infinite;
+}
+#lightBlob {
+    top: -80px;
+    left: -90px;
+    z-index: -2;
+    position: absolute;
+    overflow: hidden;
+    transform: rotate(360deg);
+    animation: rotation 800s linear infinite;
+}
+#dashedBlob {
+    top: -100px;
+    left: -65px;
+    z-index: -1;
+    position: absolute;
+}
+@keyframes rotation {
+    from    { transform: rotate(0deg); }
+    to      { transform: rotate(359deg); }
+}
+/* iPHONE 5SE */
+@media (max-width: 320px) {
+    #darkBlob {
+        right: 0;
+        top: -150px;
+        width: 500px;
+    }
+    #lightBlob {
+        top: 0px;
+        left: -185px;
+        width: 500px;
+    }
+    #dashedBlob {
+        top: -20px;
+        left: -185px;
+        width: 500px;
+    }
+}
+/* iPHONE 6/7/8 */
+@media (min-width: 321px) and (max-width: 375px) {
+    #darkBlob {
+        right: 0;
+        top: -150px;
+        width: 500px;
+    }
+    #lightBlob {
+        top: 0px;
+        left: -140px;
+        width: 500px;
+    }
+    #dashedBlob {
+        top: -20px;
+        left: -130px;
+        width: 500px;
+    }
+}
+/* iPHONE 6/7/8 PLUS */
+@media (min-width: 376px) and (max-width: 414px) {
+    #darkBlob {
+        right: 0;
+        top: -150px;
+        width: 500px;
+    }
+    #lightBlob {
+        top: 0px;
+        left: -140px;
+        width: 500px;
+    }
+    #dashedBlob {
+        top: -10px;
+        left: -100px;
+        width: 500px;
+    }
+}
+/* iPAD */
+@media (min-width: 415px) and (max-width: 768px) {
+    #darkBlob {
+        right: 0;
+        top: -40px;
+        width: 800px;
+    }
+    #lightBlob {
+        top: 0px;
+        left: -75px;
+        width: 800px;
+    }
+    #dashedBlob {
+        top: 20px;
+        left: -45px;
+        width: 800px;
+    }
+}
+/* iPAD PRO */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #darkBlob {
+        right: 0;
+        top: 0px;
+        width: 100%;
+    }
+    #lightBlob {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    #dashedBlob {
+        top: 0px;
+        left: -20px;
+        width: 100%;
+    }
+}
