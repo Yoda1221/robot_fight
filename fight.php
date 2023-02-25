@@ -86,11 +86,11 @@ include_once "./app/view/html/header.php";
             desc_2.innerHTML    = robot_2.power
             if (robot_1.power > robot_2.power) {
                 winner.innerHTML = `The winner is ${robot_1.name}`
-                fetchData(robot_1)
+                //fetchData(robot_1)
             }
             else if (robot_1.power < robot_2.power) {
                 winner.innerHTML = `The winner is ${robot_2.name}`
-                fetchData(robot_2)
+                //fetchData(robot_2)
             }
             else                                    winner.innerHTML = "The fight is draw"
             winner.classList.add("alert-info")
